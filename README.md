@@ -1,3 +1,3 @@
 # problem-solving
 
-Collection of solution is been asked during an interview.
+Collection of problem-solving exercise is been asked during an interview.
