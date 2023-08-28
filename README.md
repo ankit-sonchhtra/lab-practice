@@ -1,3 +1,3 @@
-# problem-solving
+# lab-practice
 
-Collection of problem-solving exercise is been asked during an interview.
+Routine problem solving exercise practice.
