@@ -3,7 +3,7 @@ package com.interview;
 import java.util.*;
 import java.util.stream.Stream;
 
-public class SteamDemo {
+public class StreamDemo {
 
 
     public static void main(String[] args) {

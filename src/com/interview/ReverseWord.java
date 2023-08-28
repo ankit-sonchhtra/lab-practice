@@ -6,19 +6,12 @@ public class ReverseWord {
 
         String str = "I love programming very much";
 
-        char ch;
-
         String newStr = "";
 
         String[] s = str.split(" ");
-        for (int i = 0;i<s.length;i++) {
-            String nstr = "";
-            for (int j=0; j<s[i].length(); j++)
-            {
-                StringBuilder sb = new StringBuilder(s[i]);
-                nstr = sb.reverse().toString();
-            }
-            newStr = newStr + " " + nstr;
+        for (String value : s) {
+            StringBuilder sb = new StringBuilder(value);
+            newStr = newStr + " " + sb.reverse();
         }
         System.out.println(newStr);
     }

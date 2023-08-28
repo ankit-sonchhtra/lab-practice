@@ -5,7 +5,7 @@ import java.util.Stack;
 public class BalancedString {
 
     public static void main(String[] args) {
-        System.out.println(isBalanced("[()]{}()()]()()}"));
+        System.out.println(isBalanced("[()]{}()()()()"));
     }
 
     public static boolean isBalanced(String expr) {
@@ -21,22 +21,22 @@ public class BalancedString {
                 return false;
 
             char check;
-            switch(c){
-                case '}':
+            switch (c) {
+                case '}' -> {
                     check = s.pop();
-                    if(check == ')' || check == ']')
+                    if (check == ')' || check == ']')
                         return false;
-                    break;
-                case ')':
+                }
+                case ')' -> {
                     check = s.pop();
-                    if(check == ']' || check == '}')
+                    if (check == ']' || check == '}')
                         return false;
-                    break;
-                case ']':
+                }
+                case ']' -> {
                     check = s.pop();
-                    if(check == ')' || check == '}')
+                    if (check == ')' || check == '}')
                         return false;
-                    break;
+                }
             }
         }
         return s.isEmpty();

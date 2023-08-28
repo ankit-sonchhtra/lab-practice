@@ -22,24 +22,22 @@ public class BalancedBrackets {
             if(s.empty())
                 return false;
             char check;
-            switch (x){
-                case ')':
+            switch (x) {
+                case ')' -> {
                     check = s.pop();
                     if (check == '{' || check == '[')
                         return false;
-                    break;
-
-                case '}':
+                }
+                case '}' -> {
                     check = s.pop();
                     if (check == '(' || check == '[')
                         return false;
-                    break;
-
-                case ']':
+                }
+                case ']' -> {
                     check = s.pop();
                     if (check == '(' || check == '{')
                         return false;
-                    break;
+                }
             }
         }
 
